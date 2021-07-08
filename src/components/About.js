@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const About = () => {
     return (
@@ -13,14 +14,14 @@ const About = () => {
             <br/>
             <p>
                 If you want to know more about me, please access the link below.
-                Thank you for reading using this website!
+                Thank you for using this website!
             </p>
             <br/>
             <a href={"https://www.linkedin.com/in/david-ouyang/"}>
                 Information about Dio Voynich
             </a>
             <br/>
-            <a href={"/"}>Go Back</a>
+            <Link to={"/"}>Go Back</Link>
         </div>
     )
 }
