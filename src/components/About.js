@@ -17,7 +17,7 @@ const About = () => {
                 Thank you for using this website!
             </p>
             <br/>
-            <a href={"https://www.linkedin.com/in/david-ouyang/"}>
+            <a href={"https://github.com/DioVoynich"}>
                 Information about Dio Voynich
             </a>
             <br/>
