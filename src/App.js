@@ -38,14 +38,14 @@ function App() {
 
     // Fetch tasks
     const fetchTasks = async () => {
-        const res = await fetch("http://localhost:5000/task")
+        const res = await fetch("https://master.d30bizxutdqna7.amplifyapp.com/task")
         const data = await res.json()
         return data
     }
 
     // Fetch a task
     const fetchTask = async (id) => {
-        const res = await fetch(`http://localhost:5000/task/${id}`)
+        const res = await fetch(`https://master.d30bizxutdqna7.amplifyapp.com/task/${id}`)
         const data = await res.json()
         return data
     }
@@ -61,7 +61,7 @@ function App() {
 
     // Add tasks
     const addTask = async (task) => {
-        const res =await fetch("http://localhost:5000/task/", {
+        const res =await fetch("https://master.d30bizxutdqna7.amplifyapp.com/task/", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(task),
@@ -77,7 +77,7 @@ function App() {
 
     // Delete task, filter does remove the specific item
     const deleteTask = async (id) => {
-        await fetch(`http://localhost:5000/task/${id}`, {method: "DELETE"})
+        await fetch(`https://master.d30bizxutdqna7.amplifyapp.com/task/${id}`, {method: "DELETE"})
         setTasks(tasks.filter((task) => task.id !== id));
     }
 
@@ -86,7 +86,7 @@ function App() {
         const taskToggle = await fetchTask(id)
         const updateTask = {...taskToggle, reminder: !taskToggle.reminder}
 
-        const res = await fetch(`http://localhost:5000/task/${id}`, {
+        const res = await fetch(`https://master.d30bizxutdqna7.amplifyapp.com/task/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
