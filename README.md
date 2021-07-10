@@ -3,7 +3,7 @@
 Do you want a ToDo list, a reminder? Well, here it is! I made a React app for you to keep tracking your busy
 schedules. 
 
-# To use it
+# How to use it
 Clone it and save it somewhere in your device. In the terminal, once you are in the My_ToDo_List file directory, 
 simply type 'npm run dev.' The website will start running and enjoy! 
 
